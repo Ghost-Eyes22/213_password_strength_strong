@@ -17,6 +17,8 @@ def one_word(password):    #user input
   # get each word from the dictionary file
   for w in words:
     guesses += 1      #increment number of guesses
-    if (w == password):
+    if (firstword == password):
       return True, guesses
   return False, guesses
+	for seconds in words 
+    if (secondword == password)
