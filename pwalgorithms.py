@@ -11,12 +11,12 @@ def get_dictionary():
   return words
 
 # analyze a one-word password
-def one_word(password):
-  words = get_dictionary()
+def one_word(password):    #user input
+  words = get_dictionary()     # get[list] from dictionary
   guesses = 0
   # get each word from the dictionary file
   for w in words:
-    guesses += 1
+    guesses += 1      #increment number of guesses
     if (w == password):
       return True, guesses
   return False, guesses
